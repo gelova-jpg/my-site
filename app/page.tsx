@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { Bricolage_Grotesque } from "next/font/google";
+import Image from "next/image";
 import SplashCursor from "./components/SplashCursor";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
@@ -413,7 +415,8 @@ export default function Home() {
                     src={p.src}
                     alt={p.title}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <figcaption className="p-4">
