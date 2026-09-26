@@ -88,21 +88,21 @@ const skills = [
 
 // Put your files in public/portfolio/ (or change the paths below)
 const portfolioImages = [
-  { src: "/portfolio/image-1.jpg", title: "Project title 1", tag: "Graphic design" },
-  { src: "/portfolio/image-2.jpg", title: "Project title 2", tag: "Graphic design" },
-  { src: "/portfolio/image-3.jpg", title: "Project title 3", tag: "Digital marketing" },
-  { src: "/portfolio/image-4.jpg", title: "Project title 4", tag: "Digital marketing" },
-  { src: "/portfolio/image-5.jpg", title: "Project title 5", tag: "Recruitment visuals" },
-  { src: "/portfolio/image-6.jpg", title: "Project title 6", tag: "Graphic design" },
-  { src: "/portfolio/image-7.jpg", title: "Project title 7", tag: "Graphic design" },
-  { src: "/portfolio/image-8.jpg", title: "Project title 8", tag: "Digital marketing" },
-  { src: "/portfolio/image-9.jpg", title: "Project title 9", tag: "Recruitment visuals" },
-  { src: "/portfolio/image-10.jpg", title: "Project title 10", tag: "Graphic design" },
-  { src: "/portfolio/image-11.jpg", title: "Project title 11", tag: "Digital marketing" },
-  { src: "/portfolio/image-12.jpg", title: "Project title 12", tag: "Graphic design" },
-  { src: "/portfolio/image-13.jpg", title: "Project title 13", tag: "Recruitment visuals" },
-  { src: "/portfolio/image-14.jpg", title: "Project title 14", tag: "Digital marketing" },
-  { src: "/portfolio/image-15.jpg", title: "Project title 15", tag: "Graphic design" },
+  { src: "/portfolio/image-1.jpg", title: "MDRT 2026", tag: "Sun Life of Canada Philippines, Inc." },
+  { src: "/portfolio/image-2.jpg", title: "Macaulay Qualifer 2025", tag: "Sun Life of Canada Philippines, Inc." },
+  { src: "/portfolio/image-3.jpg", title: "Grand Slam 2025", tag: "Sun Life of Canada Philippines, Inc." },
+  { src: "/portfolio/image-4.jpg", title: "Promotional Graphic", tag: "TGIFridays Philippines" },
+  { src: "/portfolio/image-5.jpg", title: "Promotional Graphic", tag: "TGIFridays Philippines" },
+  { src: "/portfolio/image-6.jpg", title: "Media Feature", tag: "Gigi's Custaroons" },
+  { src: "/portfolio/image-7.jpg", title: "Promotional Graphic", tag: "TGIFridays Philippines" },
+  { src: "/portfolio/image-8.jpg", title: "Static Graphic", tag: "Dave & Buster's Philippines" },
+  { src: "/portfolio/image-9.jpg", title: "Company Logo", tag: "Lumtri" },
+  { src: "/portfolio/image-10.jpg", title: "Awareness Graphic", tag: "Lumtri" },
+  { src: "/portfolio/image-11.jpg", title: "Star Wars", tag: "TGIFridays Philippines" },
+  { src: "/portfolio/image-12.jpg", title: "Star Wars", tag: "Dave & Buster's Philippines" },
+  { src: "/portfolio/image-13.jpg", title: "Static Graphic", tag: "TGIFridays Philippines" },
+  { src: "/portfolio/image-14.jpg", title: "Gaming Jersey", tag: "Deloria Store" },
+  { src: "/portfolio/image-15.jpg", title: "Static Graphic", tag: "Gigi's Custaroons" },
 ];
 
 const portfolioVideos = [
