@@ -124,7 +124,7 @@ const brands = ["Sun Life of Canada Philippines", "Lumtri", "Promovera", "Cattle
 
 export default function Home() {
   const [dark, setDark] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<{ src: string; title: string; tag: string } | null>(null);
 
   // Read saved choice (or the device setting) on first load
   useEffect(() => {
@@ -158,13 +158,13 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    const onEsc = (e) => e.key === "Escape" && setSelectedImage(null);
-    window.addEventListener("keydown", onEsc);
-    return () => window.removeEventListener("keydown", onEsc);
-  }, []);
+  const onEsc = (e: KeyboardEvent) => e.key === "Escape" && setSelectedImage(null);
+  window.addEventListener("keydown", onEsc);
+  return () => window.removeEventListener("keydown", onEsc);
+}, []);
 
   return (
-    
+
     <div
       data-theme={dark ? "dark" : "light"}
       className={`${display.variable} wrap bg-[var(--bg)] text-[var(--fg)] antialiased transition-colors duration-500 selection:bg-[var(--g)] selection:text-[var(--d)]`}
