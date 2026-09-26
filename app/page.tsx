@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Bricolage_Grotesque } from "next/font/google";
-import Image from "next/image";
 import SplashCursor from "./components/SplashCursor";
 
 const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-display" });
