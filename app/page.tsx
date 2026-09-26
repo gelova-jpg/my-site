@@ -124,6 +124,7 @@ const brands = ["Sun Life of Canada Philippines", "Lumtri", "Promovera", "Cattle
 
 export default function Home() {
   const [dark, setDark] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Read saved choice (or the device setting) on first load
   useEffect(() => {
@@ -156,7 +157,14 @@ export default function Home() {
     return () => io.disconnect();
   }, []);
 
+  useEffect(() => {
+    const onEsc = (e) => e.key === "Escape" && setSelectedImage(null);
+    window.addEventListener("keydown", onEsc);
+    return () => window.removeEventListener("keydown", onEsc);
+  }, []);
+
   return (
+    
     <div
       data-theme={dark ? "dark" : "light"}
       className={`${display.variable} wrap bg-[var(--bg)] text-[var(--fg)] antialiased transition-colors duration-500 selection:bg-[var(--g)] selection:text-[var(--d)]`}
@@ -396,7 +404,8 @@ export default function Home() {
             {portfolioImages.map((p, i) => (
               <figure
                 key={p.src}
-                className="tl group overflow-hidden rounded-2xl border border-[var(--line)]"
+                onClick={() => setSelectedImage(p)}
+                className="tl group cursor-zoom-in overflow-hidden rounded-2xl border border-[var(--line)]"
                 style={{ transitionDelay: `${(i % 3) * 80}ms` }}
               >
                 <div className="aspect-[4/3] overflow-hidden bg-[var(--line)]">
@@ -526,6 +535,32 @@ export default function Home() {
           <span>{P.location}</span>
         </div>
       </footer>
+
+      {selectedImage && (
+        <div
+          onClick={() => setSelectedImage(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-6 backdrop-blur-sm"
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute right-6 top-6 text-4xl font-light text-white transition hover:text-[var(--g)]"
+            aria-label="Close"
+          >
+            &times;
+          </button>
+          <figure onClick={(e) => e.stopPropagation()} className="max-h-[90vh] max-w-4xl">
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.title}
+              className="max-h-[80vh] w-auto rounded-lg object-contain"
+            />
+            <figcaption className="mt-4 text-center text-white">
+              <p className="text-sm text-[var(--g)]">{selectedImage.tag}</p>
+              <p className="fd text-lg font-bold">{selectedImage.title}</p>
+            </figcaption>
+          </figure>
+        </div>
+      )}
     </div>
   );
 }
