@@ -302,28 +302,16 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Monogram with rotating text */}
-          <div className="fade relative mx-auto h-60 w-60 sm:h-72 sm:w-72" style={{ animationDelay: "1s" }}>
-            <svg viewBox="0 0 200 200" className="spin absolute inset-0 h-full w-full" aria-hidden="true">
-              <defs>
-                <path id="ringpath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" />
-              </defs>
-              <text fill="#f6ae2d" fontSize="13" className="fd">
-                <textPath href="#ringpath" textLength="500">
-                  Digital marketing • Graphic design • Video editing • Virtual assistance •
-                </textPath>
-              </text>
-            </svg>
-            <div className="absolute inset-[17%] overflow-hidden rounded-full bg-[var(--g)]">
-              <Image
-                src="/profile.png"
-                alt="Angelo Ramos"
-                fill
-                sizes="(max-width: 640px) 200px, 300px"
-                className="object-cover"
-              />
-            </div>
-          </div>
+          {/* Profile photo */}
+<div className="fade relative mx-auto h-60 w-60 overflow-hidden rounded-2xl sm:h-72 sm:w-72" style={{ animationDelay: "1s" }}>
+  <Image
+    src="/profile.png"
+    alt="Angelo Ramos"
+    fill
+    sizes="(max-width: 640px) 240px, 300px"
+    className="object-cover"
+  />
+</div>
         </div>
       </section>
 
