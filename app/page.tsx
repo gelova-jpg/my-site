@@ -267,7 +267,7 @@ export default function Home() {
           e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
         }}
       >
-        <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1fr_auto]">
+        <div className="mx-auto grid max-w-6xl items-stretch gap-14 lg:grid-cols-[1fr_auto]">
           <div>
             <p className="fade text-[var(--g)]" style={{ animationDelay: ".1s" }}>
               {P.location}
@@ -303,13 +303,13 @@ export default function Home() {
           </div>
 
           {/* Profile photo */}
-<div className="fade relative mx-auto h-[420px] w-[320px] overflow-hidden rounded-2xl sm:h-[560px] sm:w-[420px]" style={{ animationDelay: "1s" }}>
+<div className="fade relative mx-auto h-full w-[280px] overflow-hidden rounded-2xl sm:w-[380px]" style={{ animationDelay: "1s" }}>
   <Image
     src="/profile.png"
     alt="Angelo Ramos"
     fill
-    sizes="(max-width: 640px) 320px, 420px"
-    className="object-cover"
+    sizes="(max-width: 640px) 280px, 380px"
+    className="object-contain"
   />
 </div>
         </div>
