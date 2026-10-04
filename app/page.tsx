@@ -316,7 +316,7 @@ export default function Home() {
             </svg>
             <div className="absolute inset-[17%] overflow-hidden rounded-full bg-[var(--g)]">
               <Image
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Angelo Ramos"
                 fill
                 sizes="(max-width: 640px) 200px, 300px"
