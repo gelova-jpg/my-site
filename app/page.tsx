@@ -159,13 +159,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-  const onEsc = (e: KeyboardEvent) => e.key === "Escape" && setSelectedImage(null);
-  window.addEventListener("keydown", onEsc);
-  return () => window.removeEventListener("keydown", onEsc);
-}, []);
+    const onEsc = (e: KeyboardEvent) => e.key === "Escape" && setSelectedImage(null);
+    window.addEventListener("keydown", onEsc);
+    return () => window.removeEventListener("keydown", onEsc);
+  }, []);
 
   return (
-
     <div
       data-theme={dark ? "dark" : "light"}
       className={`${display.variable} wrap bg-[var(--bg)] text-[var(--fg)] antialiased transition-colors duration-500 selection:bg-[var(--g)] selection:text-[var(--d)]`}
@@ -275,10 +274,10 @@ export default function Home() {
             </p>
             <h1 className="fd mt-4 text-[clamp(3.6rem,13vw,9.5rem)] font-extrabold leading-[.92] tracking-tight">
               <span className="block overflow-hidden pb-[.08em]">
-                <span className="rise" style={{ animationDelay: ".15s" }}>Angelo</span>
+                <span className="rise" style={{ animationDelay: ".15s" }}>PORT</span>
               </span>
               <span className="block overflow-hidden pb-[.08em] text-[var(--g)]">
-                <span className="rise" style={{ animationDelay: ".3s" }}>Ramos</span>
+                <span className="rise" style={{ animationDelay: ".3s" }}>FOLIO</span>
               </span>
             </h1>
             <p className="fade fd mt-8 max-w-xl text-2xl italic leading-snug" style={{ animationDelay: ".9s" }}>
@@ -317,11 +316,11 @@ export default function Home() {
             </svg>
             <div className="absolute inset-[17%] overflow-hidden rounded-full bg-[var(--g)]">
               <Image
-              src="/profile.jpg"
-              alt="Angelo Ramos"
-              fill
-              sizes="(max-width: 640px) 200px, 300px"
-              className="object-cover"
+                src="/profile.jpg"
+                alt="Angelo Ramos"
+                fill
+                sizes="(max-width: 640px) 200px, 300px"
+                className="object-cover"
               />
             </div>
           </div>
@@ -415,13 +414,14 @@ export default function Home() {
                 className="tl group cursor-zoom-in overflow-hidden rounded-2xl border border-[var(--line)]"
                 style={{ transitionDelay: `${(i % 3) * 80}ms` }}
               >
-                <div className="aspect-[4/3] overflow-hidden bg-[var(--line)]">
-                  <img
+                <div className="relative aspect-[4/3] overflow-hidden bg-[var(--line)]">
+                  <Image
                     src={p.src}
                     alt={p.title}
+                    fill
                     loading="lazy"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <figcaption className="p-4">
