@@ -267,7 +267,7 @@ export default function Home() {
           e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
         }}
       >
-        <div className="absolute inset-y-0 right-0 hidden w-[32%] lg:block">
+        <div className="absolute inset-y-0 right-0 hidden w-[22%] lg:block">
           <Image
             src="/profile.png"
             alt="Angelo Ramos"
