@@ -12,7 +12,7 @@ const P = {
   name: "PORT FOLIO",
   quote: "Turning ideas into action and challenges into opportunities.",
   email: "mail.angelo.ramos@gmail.com",
-  location: "Western Visayas, Philippines",
+  location: "GELO VIRTUAL ASSISTANT",
   linkedin: "https://www.linkedin.com/in/angeloramosva/",
   portfolio: "https://canva.link/ec6b49rjane8nh8",
   facebook: "https://www.facebook.com/fb.gelo.va",
