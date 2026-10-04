@@ -221,7 +221,7 @@ export default function Home() {
       <header className="nav fixed inset-x-0 top-0 z-20 text-[var(--w)]">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2 text-sm">
           <a href="#top" className="fd text-base font-bold">
-            <img src="/GVA.png" alt="Angelo Ramos" className="h-17 w-auto sm:h-18" />
+            <img src="/GVA.png" alt="PORT FOLIO" className="h-17 w-auto sm:h-18" />
           </a>
           <div className="flex items-center gap-7">
             <div className="hidden gap-7 sm:flex">
