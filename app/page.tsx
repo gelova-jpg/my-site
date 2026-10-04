@@ -268,13 +268,13 @@ export default function Home() {
         }}
       >
         {/* Profile photo */}
-        <div className="fade relative hidden h-full min-h-[500px] w-full items-end justify-center lg:flex" style={{ animationDelay: "1s" }}>
-          <div className="relative h-[90%] w-full">
+        <div className="fade relative hidden h-full min-h-[300px] w-full items-end justify-center lg:flex" style={{ animationDelay: "1s" }}>
+          <div className="relative h-[60%] w-full">
           <Image
             src="/profile.png"
             alt="Angelo Ramos"
             fill
-            sizes="(min-width: 1024px) 45vw, 100vw"
+            sizes="(min-width: 640px) 25vw, 70vw"
             className="object-contain object-bottom"
           />
         </div>
