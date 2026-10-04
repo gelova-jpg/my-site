@@ -9,7 +9,7 @@ const display = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-disp
 
 // ====== I-EDIT DITO ANG LAMAN ======
 const P = {
-  name: "Angelo Ramos",
+  name: "PORT FOLIO",
   quote: "Turning ideas into action and challenges into opportunities.",
   email: "mail.angelo.ramos@gmail.com",
   location: "Western Visayas, Philippines",
