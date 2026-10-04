@@ -268,7 +268,7 @@ export default function Home() {
         }}
       >
         {/* Profile photo */}
-        <div className="fade relative hidden h-full min-h-[300px] w-full items-end justify-center lg:flex" style={{ animationDelay: "1s" }}>
+        <div className="fade relative hidden h-full w-full items-end justify-center lg:flex" style={{ animationDelay: "1s" }}>
           <div className="relative h-[60%] w-full">
           <Image
             src="/profile.png"
