@@ -267,7 +267,16 @@ export default function Home() {
           e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
         }}
       >
-        <div className="mx-auto grid max-w-6xl items-stretch gap-14 lg:grid-cols-[1fr_auto]">
+        <div className="absolute inset-y-0 right-0 hidden w-1/2 lg:block">
+          <Image
+            src="/profile.png"
+            alt="Angelo Ramos"
+            fill
+            sizes="50vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative mx-auto grid max-w-7xl items-stretch gap-0 lg:grid-cols-2">
           <div>
             <p className="fade text-[var(--g)]" style={{ animationDelay: ".1s" }}>
               {P.location}
@@ -302,16 +311,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Profile photo */}
-<div className="fade relative mx-auto h-full w-[280px] overflow-hidden rounded-2xl sm:w-[380px]" style={{ animationDelay: "1s" }}>
-  <Image
-    src="/profile.png"
-    alt="Angelo Ramos"
-    fill
-    sizes="(max-width: 640px) 280px, 380px"
-    className="object-contain"
-  />
-</div>
+          {/* Profile photo (shown above via absolute layer on desktop) */}
+          <div className="hidden lg:block" />
         </div>
       </section>
 
