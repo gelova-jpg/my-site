@@ -267,14 +267,17 @@ export default function Home() {
           e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
         }}
       >
-        <div className="absolute inset-y-0 right-0 hidden w-[22%] lg:block">
+        {/* Profile photo */}
+        <div className="fade relative hidden h-full min-h-[500px] w-full items-end justify-center lg:flex" style={{ animationDelay: "1s" }}>
+          <div className="relative h-[90%] w-full">
           <Image
             src="/profile.png"
             alt="Angelo Ramos"
             fill
-            sizes="50vw"
-            className="object-cover"
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            className="object-contain object-bottom"
           />
+        </div>
         </div>
         <div className="relative mx-auto grid max-w-7xl items-stretch gap-0 lg:grid-cols-2">
           <div>
