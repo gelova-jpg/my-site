@@ -15,7 +15,7 @@ const P = {
   location: "Western Visayas, Philippines",
   linkedin: "https://www.linkedin.com/in/angeloramosva/",
   portfolio: "https://canva.link/ec6b49rjane8nh8",
-  facebook: "https://www.facebook.com/your.fb.gelo.va",
+  facebook: "https://www.facebook.com/fb.gelo.va",
   tiktok: "https://www.tiktok.com/@tiktok.gelo.va",
   summary:
     "Results-driven professional with experience in digital marketing, graphic design, video editing, virtual assistance, administrative support, recruitment, and customer service. I create effective marketing materials, support business operations, and manage client relationships, with an organized, detail-oriented, and adaptable approach.",
