@@ -275,10 +275,10 @@ export default function Home() {
             </p>
             <h1 className="fd mt-4 text-[clamp(3.6rem,13vw,9.5rem)] font-extrabold leading-[.92] tracking-tight">
               <span className="block overflow-hidden pb-[.08em]">
-                <span className="rise" style={{ animationDelay: ".15s" }}>PORT</span>
+                <span className="rise" style={{ animationDelay: ".15s" }}>Angelo</span>
               </span>
               <span className="block overflow-hidden pb-[.08em] text-[var(--g)]">
-                <span className="rise" style={{ animationDelay: ".3s" }}>FOLIO</span>
+                <span className="rise" style={{ animationDelay: ".3s" }}>Ramos</span>
               </span>
             </h1>
             <p className="fade fd mt-8 max-w-xl text-2xl italic leading-snug" style={{ animationDelay: ".9s" }}>
@@ -315,8 +315,14 @@ export default function Home() {
                 </textPath>
               </text>
             </svg>
-            <div className="fd absolute inset-[17%] grid place-items-center rounded-full bg-[var(--g)] text-6xl font-extrabold text-[var(--m)] sm:text-7xl">
-              AR
+            <div className="absolute inset-[17%] overflow-hidden rounded-full bg-[var(--g)]">
+              <Image
+              src="/profile.jpg"
+              alt="Angelo Ramos"
+              fill
+              sizes="(max-width: 640px) 200px, 300px"
+              className="object-cover"
+              />
             </div>
           </div>
         </div>
