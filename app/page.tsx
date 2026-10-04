@@ -303,12 +303,12 @@ export default function Home() {
           </div>
 
           {/* Profile photo */}
-<div className="fade relative mx-auto h-60 w-60 overflow-hidden rounded-2xl sm:h-72 sm:w-72" style={{ animationDelay: "1s" }}>
+<div className="fade relative mx-auto h-[420px] w-[320px] overflow-hidden rounded-2xl sm:h-[560px] sm:w-[420px]" style={{ animationDelay: "1s" }}>
   <Image
     src="/profile.png"
     alt="Angelo Ramos"
     fill
-    sizes="(max-width: 640px) 240px, 300px"
+    sizes="(max-width: 640px) 320px, 420px"
     className="object-cover"
   />
 </div>
